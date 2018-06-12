@@ -4,7 +4,7 @@ title: FusionInsight
 
 Huawei FusionInsight es una plataforma de big data para el almacenamiento, búsqueda y análisis de información. 
 
-FusionInsight se encuentra dividido en cinco subproductos los cauales son FusionInsight HD, FusionInsight LibrA, 
+FusionInsight se encuentra dividido en cinco subproductos los cuales son FusionInsight HD, FusionInsight LibrA, 
 FusionInsight Miner, FusionInsight Farmer y FusionInsight Manager.
 
 **FusionInsight HD** es la plataforma de procesamiento distribuido de Big Data,  que integra diversas herramientas de 
@@ -26,3 +26,12 @@ análisis de información estructurada y puede procesar información del orden d
 
 
  
+### Arquitectura de FusionInsight Manager
+El FusionInsight manager está compuesto de OMS y OMA. Los OMS son los nodos de administración en el sistema de O&M (Operation
+and Maintenance). El FusionInsight manager tiene dos nodos OMS en modo activo y stand by. OMA es el nodo administrado en el 
+sistema de O&M. Existen múltiples nodos OMA que componen el FusionInsight manager. 
+
+El OMS contiene los siguientes componentes:
+* **Web Service**  Montado sobre Tomcat. El Web Service proporciona una interface HTTPS para acceder al FusionInsight manager 
+desde un explorador Web.
+* **CAS** 
